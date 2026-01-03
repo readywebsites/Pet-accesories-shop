@@ -1,0 +1,989 @@
+/* Small Pets Page Specific Styles */
+
+/* Small Pets Hero */
+.small-hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #FFF9E6 0%, #E6F7FF 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.small-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.small-hero-text {
+  flex: 1;
+}
+
+.small-hero-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.small-highlight {
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+}
+
+.small-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: var(--accent2);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.small-hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.small-hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.small-stat {
+  text-align: center;
+}
+
+.small-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--heading-font);
+}
+
+.small-stat-text {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--dark);
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.small-hero-image {
+  flex: 1;
+  position: relative;
+}
+
+.small-pets-icons {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  z-index: 1;
+}
+
+.small-pets-icons i {
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.6;
+  margin-left: 15px;
+  animation: bounce-small 4s ease-in-out infinite;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.small-pets-icons i:nth-child(2) {
+  animation-delay: 0.5s;
+  color: var(--accent2);
+  font-size: 2.5rem;
+}
+
+.small-pets-icons i:nth-child(3) {
+  animation-delay: 1s;
+  color: var(--secondary);
+  font-size: 2.2rem;
+}
+
+@keyframes bounce-small {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+.hero-small-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: rotate(-1deg);
+  transition: transform 0.5s ease;
+}
+
+.hero-small-img:hover {
+  transform: rotate(0deg);
+}
+
+/* Small Pets Categories */
+.small-categories {
+  padding: 2rem 0;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.small-pet-type-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pet-type-btn {
+  padding: 10px 20px;
+  background-color: var(--light);
+  border: 2px solid #eee;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+
+.pet-type-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.pet-type-btn.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  box-shadow: 0 5px 15px rgba(255, 209, 102, 0.2);
+}
+
+.small-category-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.small-tab-btn {
+  padding: 12px 24px;
+  background-color: var(--light);
+  border: 2px solid #eee;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--dark);
+}
+
+.small-tab-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.small-tab-btn.active {
+  background-color: var(--accent2);
+  color: white;
+  border-color: var(--accent2);
+  box-shadow: 0 5px 15px rgba(122, 229, 130, 0.2);
+}
+
+/* Small Pets Products */
+.small-products {
+  padding: 4rem 0;
+}
+
+.small-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.small-product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.small-product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.small-product-badge-top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+}
+
+.small-product-badge-top span {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.small-best-value {
+  background-color: var(--primary);
+}
+
+.small-bestseller {
+  background-color: var(--accent2);
+}
+
+.small-new {
+  background-color: var(--secondary);
+}
+
+.small-product-image {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.small-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.small-product-card:hover .small-product-image img {
+  transform: scale(1.05);
+}
+
+.small-quick-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.small-product-card:hover .small-quick-view {
+  transform: translateY(0);
+}
+
+.small-product-info {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.pet-type-badge {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  background-color: var(--accent);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.pet-type-badge.hamster {
+  background-color: #FF9A76;
+}
+
+.pet-type-badge.guinea {
+  background-color: #7AE582;
+}
+
+.pet-type-badge.rabbit {
+  background-color: #9B59B6;
+}
+
+.pet-type-badge.ferret {
+  background-color: #3498DB;
+}
+
+.pet-type-badge.mouse {
+  background-color: #E74C3C;
+}
+
+.pet-type-badge.all {
+  background-color: var(--accent);
+}
+
+.small-product-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  padding-right: 80px;
+}
+
+.small-product-brand {
+  color: var(--accent2);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.small-product-desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.small-product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.small-stars {
+  color: #FFC107;
+  margin-right: 8px;
+}
+
+.small-rating-count {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.small-product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.small-price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-current-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.small-original-price {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-top: 2px;
+}
+
+.small-save-badge {
+  background-color: var(--accent2);
+  color: var(--dark);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+
+.add-to-cart-small {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-to-cart-small:hover {
+  background-color: #ffc24d;
+  transform: scale(1.05);
+}
+
+.small-product-sizes,
+.small-product-flavors {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.small-size-label,
+.small-flavor-label {
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.small-size-btn,
+.small-flavor-btn {
+  padding: 5px 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.small-size-btn:hover,
+.small-flavor-btn:hover {
+  background-color: #eee;
+}
+
+.small-size-btn.active,
+.small-flavor-btn.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Load More Button */
+.small-load-more-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.small-load-more-btn {
+  background-color: white;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.small-load-more-btn:hover {
+  background-color: var(--accent);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 209, 102, 0.2);
+}
+
+/* Small Pets Habitat Guide */
+.small-habitat-guide {
+  padding: 5rem 0;
+  background-color: #F9FAFD;
+}
+
+.habitat-guide-content {
+  display: flex;
+  gap: 4rem;
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.habitat-guide-info {
+  flex: 1;
+}
+
+.habitat-guide-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.habitat-guide-info p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.habitat-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.habitat-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.habitat-tip i {
+  font-size: 1.5rem;
+  color: var(--accent);
+  background-color: #FFF9E6;
+  padding: 12px;
+  border-radius: 50%;
+  min-width: 50px;
+  text-align: center;
+}
+
+.habitat-tip h4 {
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+.habitat-tip p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #666;
+}
+
+.habitat-size-chart {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.habitat-size-chart h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+.size-chart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pet-icon {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.pet-info h5 {
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+.pet-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.habitat-guide-btn {
+  display: block;
+  text-align: center;
+  background-color: var(--accent2);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.habitat-guide-btn:hover {
+  background-color: #6bd473;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(122, 229, 130, 0.2);
+}
+
+/* Small Pets Care Bundle */
+.small-care-bundle {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #E6F7FF 0%, #FFF9E6 100%);
+}
+
+.bundle-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bundle-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.bundle-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bundle-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.bundle-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bundle-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bundle-card.popular {
+  border: 3px solid var(--accent);
+  transform: scale(1.05);
+}
+
+.bundle-card.popular:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.bundle-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  color: white;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.bundle-card h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.bundle-price {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.bundle-save {
+  display: block;
+  font-size: 1rem;
+  color: var(--accent2);
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.bundle-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.bundle-features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.bundle-features li i {
+  color: var(--accent2);
+  margin-right: 10px;
+}
+
+.bundle-btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.bundle-btn:hover {
+  background-color: #ffc24d;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 209, 102, 0.3);
+}
+
+/* Small Quick View Modal */
+.small-quick-view-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.small-modal-content {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.small-close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--dark);
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.small-close-modal:hover {
+  color: var(--primary);
+}
+
+.small-modal-product-details {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.small-modal-product-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.small-modal-product-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.small-modal-product-info {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.small-modal-pet-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--accent);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.small-modal-brand {
+  color: var(--accent2);
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 2rem;
+}
+
+.small-modal-rating {
+  margin-bottom: 1.5rem;
+}
+
+.small-modal-desc {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.small-modal-sizes {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.small-modal-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.small-modal-add-to-cart {
+  margin-bottom: 2rem;
+  background-color: var(--accent);
+}
+
+.small-modal-add-to-cart:hover {
+  background-color: #ffc24d;
+}
+
+.small-modal-features h4 {
+  margin-bottom: 1rem;
+}
+
+.small-modal-features ul {
+  list-style: none;
+}
+
+.small-modal-features li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.small-modal-features li i {
+  color: var(--accent2);
+  margin-right: 10px;
+}
+
+/* Responsive Design for Small Pets Page */
+@media (max-width: 992px) {
+  .small-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .small-hero-stats {
+    justify-content: center;
+  }
+
+  .small-hero-text p {
+    margin: 0 auto 2rem;
+  }
+
+  .habitat-guide-content {
+    flex-direction: column;
+  }
+
+  .small-modal-product-details {
+    flex-direction: column;
+  }
+
+  .bundle-card.popular {
+    transform: none;
+  }
+
+  .bundle-card.popular:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .small-hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .small-hero-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sort-filter {
+    align-self: flex-end;
+  }
+
+  .habitat-guide-content {
+    padding: 2rem;
+  }
+
+  .bundle-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .small-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .small-stat-number {
+    font-size: 2rem;
+  }
+
+  .small-pet-type-buttons,
+  .small-category-tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .pet-type-btn,
+  .small-tab-btn {
+    flex-shrink: 0;
+  }
+
+  .small-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-modal-content {
+    padding: 1.5rem;
+  }
+
+  .small-modal-product-image,
+  .small-modal-product-info {
+    min-width: 100%;
+  }
+
+  .small-pets-icons {
+    display: none;
+  }
+}

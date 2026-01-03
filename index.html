@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetJoy - Joyful Pet Accessories</title>
+    <link rel="stylesheet" href="Asset/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1><i class="fas fa-paw"></i> PetJoy</h1>
+            <p class="tagline">Where pets find their joy!</p>
+            `
+          </div>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li class="nav-item dropdown">
+                <a href="#shop" class="dropdown-toggle"
+                  >Shop <i class="fas fa-caret-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="dog-pet.html">Dog Supplies</a></li>
+                  <li><a href="cat-pet.html">Cat Paradise</a></li>
+                  <li><a href="bird-pet.html">Bird Accessories</a></li>
+                  <li><a href="small-pet.html">Small Pets</a></li>
+                </ul>
+              </li>
+              <li><a href="#new">New Arrivals</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+          </button>
+
+          <div class="header-icons">
+            <div class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">3</span>
+            </div>
+            <div class="user-icon">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>
+              Bring <span class="highlight">Joy</span> to Your Pet's Life!
+            </h2>
+            <p>
+              Discover our playful collection of pet accessories, toys, and food
+              that will make your furry friend jump with happiness.
+            </p>
+            <a href="#shop" class="btn">Shop Now</a>
+          </div>
+          <div class="hero-image">
+            <div class="floating-pet">
+              <i class="fas fa-dog"></i>
+            </div>
+            <div class="floating-pet cat">
+              <i class="fas fa-cat"></i>
+            </div>
+            <div class="floating-pet fish">
+              <i class="fas fa-fish"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Shop by Pet</h2>
+        <div class="category-grid">
+          <div class="category-card dog">
+            <a href="dog-pet.html">
+              <div class="category-icon">
+                <i class="fas fa-dog"></i>
+              </div>
+              <h3>Dog Supplies</h3>
+              <p>Toys, beds, leashes & more</p>
+            </a>
+          </div>
+          <div class="category-card cat">
+            <a href="cat-pet.html">
+              <div class="category-icon">
+                <i class="fas fa-cat"></i>
+              </div>
+              <h3>Cat Paradise</h3>
+              <p>Scratchers, toys, trees & more</p>
+            </a>
+          </div>
+          <div class="category-card bird">
+            <a href="bird-pet.html">
+              <div class="category-icon">
+                <i class="fas fa-dove"></i>
+              </div>
+              <h3>Bird Accessories</h3>
+              <p>Cages, perches, toys & more</p>
+            </a>
+          </div>
+          <div class="category-card small">
+            <a href="small-pet.html">
+              <div class="category-icon">
+                <i class="fas fa-paw"></i>
+              </div>
+              <h3>Small Pets</h3>
+              <p>Habitats, wheels, treats & more</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="shop">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="Asset/image/home-page/hp-001.webp"
+                alt="Colorful Pet Toy"
+              />
+              <span class="product-badge">Bestseller</span>
+            </div>
+            <div class="product-info">
+              <h3>Joyful Chew Toy</h3>
+              <p>Durable, colorful chew toy for dogs of all sizes.</p>
+              <div class="product-footer">
+                <span class="price">$12.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="Asset/image/home-page/hp-002.webp"
+                alt="Cat Scratching Post"
+              />
+              <span class="product-badge sale">Sale</span>
+            </div>
+            <div class="product-info">
+              <h3>Scratch & Play Tower</h3>
+              <p>Multi-level cat scratching post with hanging toys.</p>
+              <div class="product-footer">
+                <span class="price"><s>$49.99</s> $34.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="Asset/image/home-page/hp-003.webp" alt="Pet Food" />
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Organic Pet Food</h3>
+              <p>Healthy, organic food for dogs and cats.</p>
+              <div class="product-footer">
+                <span class="price">$24.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="Asset/image/home-page/hp-004.webp" alt="Pet Bed" />
+              <span class="product-badge">Popular</span>
+            </div>
+            <div class="product-info">
+              <h3>Cozy Pet Bed</h3>
+              <p>Ultra-soft, washable bed for pets of all sizes.</p>
+              <div class="product-footer">
+                <span class="price">$39.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrivals" id="new">
+      <div class="container">
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="arrival-grid">
+          <div class="arrival-item">
+            <div class="arrival-image">
+              <img
+                src="Asset/image/home-page/hp-005.webp"
+                alt="Interactive Pet Toy"
+              />
+            </div>
+            <div class="arrival-info">
+              <h3>Interactive Puzzle Toy</h3>
+              <p>Challenge your pet's mind with this fun puzzle toy.</p>
+              <a href="#" class="arrival-btn">View Details</a>
+            </div>
+          </div>
+
+          <div class="arrival-item">
+            <div class="arrival-image">
+              <img src="Asset/image/home-page/hp-006.webp" alt="Pet Fashion" />
+            </div>
+            <div class="arrival-info">
+              <h3>Fashionable Pet Harness</h3>
+              <p>Stylish and comfortable harness for daily walks.</p>
+              <a href="#" class="arrival-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h2>Join the PetJoy Family!</h2>
+            <p>
+              Subscribe to get updates on new products, exclusive offers, and
+              pet care tips.
+            </p>
+          </div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3><i class="fas fa-paw"></i> PetJoy</h3>
+            <p>
+              Bringing joy to pets and their humans since 2023. We offer the
+              highest quality pet accessories with a focus on fun and happiness.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop All</a></li>
+              <li><a href="#new">New Arrivals</a></li>
+              <li><a href="#sale">On Sale</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Pet Street, Joyville
+              </li>
+              <li><i class="fas fa-phone"></i> (555) 123-PETS</li>
+              <li><i class="fas fa-envelope"></i> hello@petjoy.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2023 PetJoy. All rights reserved. | Designed with
+            <i class="fas fa-heart"></i> for pets everywhere.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Shopping Cart</h3>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="Asset/image/home-page/hp-001.webp" alt="Joyful Chew Toy" />
+          <div class="cart-item-info">
+            <h4>Joyful Chew Toy</h4>
+            <p>1 x $12.99</p>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="Asset/image/home-page/hp-003.webp" alt="Organic Pet Food" />
+          <div class="cart-item-info">
+            <h4>Organic Pet Food</h4>
+            <p>2 x $24.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+        <h4>Total: $62.97</h4>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <script>
+      // Simple cart functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartIcon = document.querySelector(".cart-icon");
+        const closeCart = document.querySelector(".close-cart");
+        const cartSidebar = document.querySelector(".cart-sidebar");
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        const cartCount = document.querySelector(".cart-count");
+
+        // Toggle cart sidebar
+        cartIcon.addEventListener("click", function () {
+          cartSidebar.style.right = "0";
+        });
+
+        closeCart.addEventListener("click", function () {
+          cartSidebar.style.right = "-350px";
+        });
+
+        // Add to cart functionality
+        addToCartButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            let currentCount = parseInt(cartCount.textContent);
+            cartCount.textContent = currentCount + 1;
+            cartCount.classList.add("animate-bounce");
+
+            // Remove animation class after animation completes
+            setTimeout(() => {
+              cartCount.classList.remove("animate-bounce");
+            }, 500);
+
+            // Show cart sidebar when item is added
+            cartSidebar.style.right = "0";
+          });
+        });
+
+        // Smooth scrolling for navigation links (ignore dropdown toggle)
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            // If this is the dropdown toggle, do not perform smooth-scroll here
+            if (this.classList.contains("dropdown-toggle")) return;
+
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Dropdown toggle behavior for Shop submenu
+        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+        dropdownToggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parent = this.closest(".nav-item");
+            parent.classList.toggle("open");
+          });
+        });
+
+        // Close dropdown when clicking outside or pressing Escape
+        document.addEventListener("click", function (e) {
+          const opened = document.querySelectorAll(".nav-item.open");
+          opened.forEach((item) => {
+            if (!item.contains(e.target)) item.classList.remove("open");
+          });
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            document
+              .querySelectorAll(".nav-item.open")
+              .forEach((item) => item.classList.remove("open"));
+          }
+        });
+
+        // Active nav link on scroll
+        window.addEventListener("scroll", function () {
+          const sections = document.querySelectorAll("section");
+          const navLinks = document.querySelectorAll(".main-nav a");
+
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop - 100) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+    <script src="Asset/js/nav-toggle.js"></script>
+  </body>
+</html>

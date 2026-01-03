@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bird Supplies | PetJoy - Joyful Pet Accessories</title>
+    <link rel="stylesheet" href="Asset/style/bird-pet.css" />
+    <link rel="stylesheet" href="Asset/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1><i class="fas fa-paw"></i> PetJoy</h1>
+            <p class="tagline">Where pets find their joy!</p>
+          </div>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="dog-pet.html">Dog Supplies</a></li>
+              <li><a href="cat-pet.html">Cat Supplies</a></li>
+              <li><a href="#" class="active">Bird Supplies</a></li>
+              <li><a href="small-pet.html">Small Pets</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+          </button>
+
+          <div class="header-icons">
+            <div class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">2</span>
+            </div>
+            <div class="user-icon">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bird Page Hero -->
+    <section class="bird-hero">
+      <div class="container">
+        <div class="bird-hero-content">
+          <div class="bird-hero-text">
+            <h1>
+              Fly High with
+              <span class="bird-highlight">Feathered</span> Friends!
+            </h1>
+            <p>
+              Discover everything your avian companion needs - from spacious
+              cages and nutritious food to engaging toys and comfortable
+              perches.
+            </p>
+            <div class="bird-hero-stats">
+              <div class="bird-stat">
+                <span class="bird-stat-number">120+</span>
+                <span class="bird-stat-text">Bird Products</span>
+              </div>
+              <div class="bird-stat">
+                <span class="bird-stat-number">Free</span>
+                <span class="bird-stat-text">Assembly Service*</span>
+              </div>
+              <div class="bird-stat">
+                <span class="bird-stat-number">Expert</span>
+                <span class="bird-stat-text">Bird Care Advice</span>
+              </div>
+            </div>
+          </div>
+          <div class="bird-hero-image">
+            <div class="bird-flying">
+              <i class="fas fa-dove"></i>
+              <i class="fas fa-dove"></i>
+            </div>
+            <img
+              src="Asset/image/bird-pet/bp-001.webp"
+              alt="Colorful Parrot"
+              class="hero-bird-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bird Categories -->
+    <section class="bird-categories">
+      <div class="container">
+        <h2 class="section-title">Everything for Your Bird</h2>
+        <div class="bird-category-tabs">
+          <button class="bird-tab-btn active" data-category="cages">
+            Cages & Habitats
+          </button>
+          <button class="bird-tab-btn" data-category="food">
+            Food & Treats
+          </button>
+          <button class="bird-tab-btn" data-category="toys">
+            Toys & Enrichment
+          </button>
+          <button class="bird-tab-btn" data-category="perches">
+            Perches & Accessories
+          </button>
+          <button class="bird-tab-btn" data-category="health">
+            Health & Care
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bird Products Grid -->
+    <section class="bird-products">
+      <div class="container">
+        <div class="products-header">
+          <h2 id="bird-category-title">Cages & Habitats</h2>
+          <div class="sort-filter">
+            <select id="bird-sort-by">
+              <option value="featured">Sort by: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="size">Cage Size</option>
+              <option value="rating">Customer Rating</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="bird-products-grid">
+          <!-- Product 1 - Cage -->
+          <div class="bird-product-card" data-category="cages">
+            <div class="bird-product-badge-top">
+              <span class="bird-best-value">Most Popular</span>
+            </div>
+            <div class="bird-product-image">
+              <img
+                src="Asset/image/bird-pet/bp-002.webp"
+                alt="Large Bird Cage"
+              />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Deluxe Flight Bird Cage</h3>
+              <p class="bird-product-brand">Avian Abode</p>
+              <p class="bird-product-desc">
+                Spacious cage with removable tray, multiple doors, and
+                horizontal bars for climbing.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="bird-rating-count">(87)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$149.99</span>
+                  <span class="bird-original-price">$189.99</span>
+                  <span class="bird-save-badge">Save $40</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+              <div class="bird-product-sizes">
+                <span class="bird-size-label">Size:</span>
+                <button class="bird-size-btn">24"</button>
+                <button class="bird-size-btn active">32"</button>
+                <button class="bird-size-btn">40"</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 - Food -->
+          <div class="bird-product-card" data-category="food">
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-003.webp" alt="Bird Food" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Premium Seed & Pellet Mix</h3>
+              <p class="bird-product-brand">Feather Feast</p>
+              <p class="bird-product-desc">
+                Nutritionally balanced blend of seeds, pellets, and dried fruits
+                for small to medium birds.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="bird-rating-count">(112)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$18.99</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+              <div class="bird-product-birdtypes">
+                <span class="bird-type-label">For:</span>
+                <button class="bird-type-btn">Parakeets</button>
+                <button class="bird-type-btn active">Cockatiels</button>
+                <button class="bird-type-btn">Lovebirds</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 - Toy -->
+          <div class="bird-product-card" data-category="toys">
+            <div class="bird-product-badge-top">
+              <span class="bird-bestseller">Interactive</span>
+            </div>
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-004.webp" alt="Bird Toys" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Foraging Toy Set (5 pieces)</h3>
+              <p class="bird-product-brand">Playful Beaks</p>
+              <p class="bird-product-desc">
+                Colorful foraging toys to stimulate natural behaviors and
+                prevent boredom.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="bird-rating-count">(64)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$24.99</span>
+                  <span class="bird-original-price">$32.99</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+              <div class="bird-product-colors">
+                <span class="bird-color-label">Colors:</span>
+                <span
+                  class="bird-color-option multi active"
+                  data-color="multi"
+                ></span>
+                <span
+                  class="bird-color-option primary"
+                  data-color="primary"
+                ></span>
+                <span
+                  class="bird-color-option pastel"
+                  data-color="pastel"
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 - Perch -->
+          <div class="bird-product-card" data-category="perches">
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-005.webp" alt="Bird Perches" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Natural Wood Perch Set</h3>
+              <p class="bird-product-brand">Branch Comfort</p>
+              <p class="bird-product-desc">
+                Varied diameter natural wood perches to promote foot health and
+                exercise.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="bird-rating-count">(93)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$22.50</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+              <div class="bird-product-sizes">
+                <span class="bird-size-label">Wood Type:</span>
+                <button class="bird-size-btn">Manzanita</button>
+                <button class="bird-size-btn active">Cholla</button>
+                <button class="bird-size-btn">Grapevine</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 - Health -->
+          <div class="bird-product-card" data-category="health">
+            <div class="bird-product-badge-top">
+              <span class="bird-new">New</span>
+            </div>
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-006.webp" alt="Bird Bath" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Bird Bath & Misting Spray</h3>
+              <p class="bird-product-brand">Avian Spa</p>
+              <p class="bird-product-desc">
+                Adjustable bath and gentle misting spray for feather health and
+                cleanliness.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="bird-rating-count">(41)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$19.99</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 - Food -->
+          <div class="bird-product-card" data-category="food">
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-007.webp" alt="Bird Treats" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Nutri-Berries & Treat Sticks</h3>
+              <p class="bird-product-brand">Treat Time</p>
+              <p class="bird-product-desc">
+                Wholesome treat blends with fruits, nuts, and seeds for training
+                and bonding.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="bird-rating-count">(156)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$12.99</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+              <div class="bird-product-flavors">
+                <span class="bird-flavor-label">Flavor:</span>
+                <button class="bird-flavor-btn">Tropical Fruit</button>
+                <button class="bird-flavor-btn active">Berry Medley</button>
+                <button class="bird-flavor-btn">Nutty Delight</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 - Cage Accessory -->
+          <div class="bird-product-card" data-category="cages">
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-008.webp" alt="Cage Cover" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Breathable Cage Cover</h3>
+              <p class="bird-product-brand">Cozy Nights</p>
+              <p class="bird-product-desc">
+                Dark, breathable fabric cover to provide darkness for better
+                sleep and reduce night frights.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="bird-rating-count">(78)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$28.99</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+              <div class="bird-product-sizes">
+                <span class="bird-size-label">Cage Size:</span>
+                <button class="bird-size-btn">Small</button>
+                <button class="bird-size-btn active">Medium</button>
+                <button class="bird-size-btn">Large</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 - Toy -->
+          <div class="bird-product-card" data-category="toys">
+            <div class="bird-product-image">
+              <img src="Asset/image/bird-pet/bp-009.webp" alt="Bird Swing" />
+              <div class="bird-quick-view">Quick View</div>
+            </div>
+            <div class="bird-product-info">
+              <h3>Colorful Bird Swing & Ladder</h3>
+              <p class="bird-product-brand">Playful Perch</p>
+              <p class="bird-product-desc">
+                Vibrant wooden swing with attached ladder for exercise and
+                entertainment.
+              </p>
+              <div class="bird-product-rating">
+                <div class="bird-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="bird-rating-count">(102)</span>
+              </div>
+              <div class="bird-product-footer">
+                <div class="bird-price-container">
+                  <span class="bird-current-price">$16.75</span>
+                  <span class="bird-original-price">$21.99</span>
+                </div>
+                <button class="add-to-cart-bird">
+                  <i class="fas fa-cart-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bird-load-more-container">
+          <button class="bird-load-more-btn">Load More Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bird Size Guide -->
+    <section class="bird-size-guide">
+      <div class="container">
+        <h2 class="section-title">Bird Size & Cage Guide</h2>
+        <div class="size-guide-content">
+          <div class="size-guide-image">
+            <img
+              src="Asset/image/bird-pet/bp-010.webp"
+              alt="Different Bird Species"
+            />
+          </div>
+          <div class="size-guide-info">
+            <h3>Choosing the Right Cage</h3>
+            <p>
+              Birds need space to fly, stretch, and play. The cage should be at
+              least 1.5 times your bird's wingspan in width, depth, and height.
+            </p>
+
+            <div class="bird-size-chart">
+              <div class="chart-row">
+                <div class="bird-type">Parakeets / Budgies</div>
+                <div class="cage-size">18" x 18" x 24" minimum</div>
+              </div>
+              <div class="chart-row">
+                <div class="bird-type">Cockatiels / Lovebirds</div>
+                <div class="cage-size">24" x 24" x 30" minimum</div>
+              </div>
+              <div class="chart-row">
+                <div class="bird-type">Conures / Small Parrots</div>
+                <div class="cage-size">30" x 30" x 36" minimum</div>
+              </div>
+              <div class="chart-row">
+                <div class="bird-type">African Greys / Amazons</div>
+                <div class="cage-size">36" x 36" x 48" minimum</div>
+              </div>
+            </div>
+
+            <a href="#" class="size-guide-btn">Download Complete Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bird Care Tips -->
+    <section class="bird-care-tips">
+      <div class="container">
+        <h2 class="section-title">Essential Bird Care Tips</h2>
+        <div class="care-tips-grid">
+          <div class="care-tip-card">
+            <div class="care-tip-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>Cage Placement</h3>
+            <p>
+              Place cage in a family area but away from drafts, direct sunlight,
+              and kitchens. Birds are social and need interaction.
+            </p>
+          </div>
+          <div class="care-tip-card">
+            <div class="care-tip-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Nutrition</h3>
+            <p>
+              Offer a varied diet of pellets, fresh vegetables, fruits, and
+              limited seeds. Always provide clean, fresh water.
+            </p>
+          </div>
+          <div class="care-tip-card">
+            <div class="care-tip-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Mental Stimulation</h3>
+            <p>
+              Rotate toys weekly to prevent boredom. Foraging toys encourage
+              natural behaviors and mental exercise.
+            </p>
+          </div>
+          <div class="care-tip-card">
+            <div class="care-tip-icon">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>
+              Regular vet visits, wing/nail trims, and monitoring droppings are
+              essential for early illness detection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h2>Join Our Avian Community!</h2>
+            <p>
+              Subscribe for bird care tips, training advice, and exclusive
+              offers on bird supplies.
+            </p>
+          </div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3><i class="fas fa-paw"></i> PetJoy</h3>
+            <p>
+              Bringing joy to birds and their owners since 2023. We offer the
+              highest quality avian supplies with a focus on bird health and
+              happiness.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Bird Supplies</h4>
+            <ul>
+              <li><a href="#cages">Cages & Aviaries</a></li>
+              <li><a href="#food">Food & Treats</a></li>
+              <li><a href="#toys">Toys & Enrichment</a></li>
+              <li><a href="#perches">Perches & Stands</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Bird Care Resources</h4>
+            <ul>
+              <li><a href="#">Cage Size Guide</a></li>
+              <li><a href="#">Bird Diet Plans</a></li>
+              <li><a href="#">Training Tips</a></li>
+              <li><a href="#">Bird First Aid</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Pet Street, Joyville
+              </li>
+              <li><i class="fas fa-phone"></i> (555) 123-BIRD</li>
+              <li><i class="fas fa-envelope"></i> birds@petjoy.com</li>
+              <li>
+                <i class="fas fa-clock"></i> Avian Specialists: Mon-Fri 9am-6pm
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2023 PetJoy. All rights reserved. | Designed with
+            <i class="fas fa-heart"></i> for birds everywhere.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Shopping Cart</h3>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <img
+            src="Asset/image/bird-pet/bp-002.webp"
+            alt="Deluxe Flight Bird Cage"
+          />
+          <div class="cart-item-info">
+            <h4>Deluxe Flight Bird Cage</h4>
+            <p>32" • $149.99</p>
+            <div class="cart-item-quantity">
+              <button class="qty-btn minus">-</button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-item"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-item">
+          <img src="Asset/image/bird-pet/bp-004.webp" alt="Foraging Toy Set" />
+          <div class="cart-item-info">
+            <h4>Foraging Toy Set (5 pieces)</h4>
+            <p>Multi-color • $24.99</p>
+            <div class="cart-item-quantity">
+              <button class="qty-btn minus">-</button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus">+</button>
+            </div>
+          </div>
+          <button class="remove-item"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="cart-summary">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <span class="subtotal-price">$174.98</span>
+        </div>
+        <div class="cart-shipping">
+          <span>Shipping:</span>
+          <span class="shipping-price">$12.99</span>
+        </div>
+        <div class="cart-total">
+          <h4>Total: <span class="total-price">$187.97</span></h4>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+        <a href="#" class="continue-shopping">Continue Shopping</a>
+      </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="bird-quick-view-modal">
+      <div class="bird-modal-content">
+        <button class="bird-close-modal">&times;</button>
+        <div class="bird-modal-product-details">
+          <!-- Content will be loaded via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Bird Page JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // Cart functionality
+        const cartIcon = document.querySelector(".cart-icon");
+        const closeCart = document.querySelector(".close-cart");
+        const cartSidebar = document.querySelector(".cart-sidebar");
+        const addToCartButtons = document.querySelectorAll(".add-to-cart-bird");
+        const cartCount = document.querySelector(".cart-count");
+        const cartItemsContainer = document.querySelector(".cart-items");
+        const cartSubtotal = document.querySelector(".subtotal-price");
+        const cartShipping = document.querySelector(".shipping-price");
+        const cartTotal = document.querySelector(".total-price");
+
+        // Tab filtering
+        const tabButtons = document.querySelectorAll(".bird-tab-btn");
+        const productCards = document.querySelectorAll(".bird-product-card");
+        const categoryTitle = document.getElementById("bird-category-title");
+
+        // Quick view modal
+        const quickViewButtons = document.querySelectorAll(".bird-quick-view");
+        const quickViewModal = document.querySelector(".bird-quick-view-modal");
+        const closeModal = document.querySelector(".bird-close-modal");
+
+        // Sort functionality
+        const sortSelect = document.getElementById("bird-sort-by");
+
+        // Initialize cart
+        let cart = [
+          {
+            id: 1,
+            name: "Deluxe Flight Bird Cage",
+            price: 149.99,
+            quantity: 1,
+            img: "Asset/image/bird-pet/bp-002.webp",
+            size: '32"',
+          },
+          {
+            id: 2,
+            name: "Foraging Toy Set (5 pieces)",
+            price: 24.99,
+            quantity: 1,
+            img: "Asset/image/bird-pet/bp-004.webp",
+            color: "Multi-color",
+          },
+        ];
+
+        // Update cart display
+        function updateCartDisplay() {
+          // Update cart count
+          let totalItems = cart.reduce(
+            (total, item) => total + item.quantity,
+            0
+          );
+          cartCount.textContent = totalItems;
+
+          // Update cart sidebar
+          cartItemsContainer.innerHTML = "";
+          let subtotal = 0;
+
+          cart.forEach((item, index) => {
+            subtotal += item.price * item.quantity;
+
+            const cartItemHTML = `
+                        <div class="cart-item">
+                            <img src="${item.img}" alt="${item.name}">
+                            <div class="cart-item-info">
+                                <h4>${item.name}</h4>
+                                <p>${
+                                  item.size || item.color || ""
+                                } • $${item.price.toFixed(2)}</p>
+                                <div class="cart-item-quantity">
+                                    <button class="qty-btn minus" data-index="${index}">-</button>
+                                    <span class="qty">${item.quantity}</span>
+                                    <button class="qty-btn plus" data-index="${index}">+</button>
+                                </div>
+                            </div>
+                            <button class="remove-item" data-index="${index}"><i class="fas fa-times"></i></button>
+                        </div>
+                    `;
+
+            cartItemsContainer.innerHTML += cartItemHTML;
+          });
+
+          // Update prices (free shipping over $150 for birds due to cage sizes)
+          const shipping = subtotal > 150 ? 0 : 12.99;
+          const total = subtotal + shipping;
+
+          cartSubtotal.textContent = `$${subtotal.toFixed(2)}`;
+          cartShipping.textContent =
+            shipping === 0 ? "FREE" : `$${shipping.toFixed(2)}`;
+          cartTotal.textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Toggle cart sidebar
+        cartIcon.addEventListener("click", function () {
+          cartSidebar.style.right = "0";
+        });
+
+        closeCart.addEventListener("click", function () {
+          cartSidebar.style.right = "-350px";
+        });
+
+        // Add to cart functionality
+        addToCartButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const productCard = this.closest(".bird-product-card");
+            const productName = productCard.querySelector("h3").textContent;
+            const productPrice = parseFloat(
+              productCard
+                .querySelector(".bird-current-price")
+                .textContent.replace("$", "")
+            );
+            const productImg = productCard.querySelector("img").src;
+
+            // Check if product already in cart
+            const existingItemIndex = cart.findIndex(
+              (item) => item.name === productName
+            );
+
+            if (existingItemIndex !== -1) {
+              // Increase quantity if already in cart
+              cart[existingItemIndex].quantity += 1;
+            } else {
+              // Add new item to cart
+              cart.push({
+                id: cart.length + 1,
+                name: productName,
+                price: productPrice,
+                quantity: 1,
+                img: productImg,
+              });
+            }
+
+            updateCartDisplay();
+
+            // Show cart sidebar when item is added
+            cartSidebar.style.right = "0";
+
+            // Animate cart icon
+            cartCount.classList.add("animate-bounce");
+            setTimeout(() => {
+              cartCount.classList.remove("animate-bounce");
+            }, 500);
+
+            // Show special message for large items
+            if (productPrice > 100) {
+              setTimeout(() => {
+                alert(
+                  "Note: Large items like cages may require special shipping. Our team will contact you for delivery details."
+                );
+              }, 300);
+            }
+          });
+        });
+
+        // Cart item quantity and removal
+        document.addEventListener("click", function (e) {
+          // Quantity buttons
+          if (
+            e.target.classList.contains("qty-btn") ||
+            e.target.parentElement.classList.contains("qty-btn")
+          ) {
+            const btn = e.target.classList.contains("qty-btn")
+              ? e.target
+              : e.target.parentElement;
+            const index = parseInt(btn.getAttribute("data-index"));
+            const isPlus = btn.classList.contains("plus");
+            const isMinus = btn.classList.contains("minus");
+
+            if (isPlus) {
+              cart[index].quantity += 1;
+            } else if (isMinus && cart[index].quantity > 1) {
+              cart[index].quantity -= 1;
+            }
+
+            updateCartDisplay();
+          }
+
+          // Remove item buttons
+          if (
+            e.target.classList.contains("remove-item") ||
+            e.target.parentElement.classList.contains("remove-item")
+          ) {
+            const btn = e.target.classList.contains("remove-item")
+              ? e.target
+              : e.target.parentElement;
+            const index = parseInt(btn.getAttribute("data-index"));
+
+            cart.splice(index, 1);
+            updateCartDisplay();
+          }
+        });
+
+        // Tab filtering
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+
+            // Add active class to clicked button
+            this.classList.add("active");
+
+            // Get category
+            const category = this.getAttribute("data-category");
+
+            // Update category title
+            const categoryTitles = {
+              cages: "Cages & Habitats",
+              food: "Food & Treats",
+              toys: "Toys & Enrichment",
+              perches: "Perches & Accessories",
+              health: "Health & Care",
+            };
+
+            categoryTitle.textContent = categoryTitles[category];
+
+            // Show/hide products based on category
+            productCards.forEach((card) => {
+              if (
+                category === "all" ||
+                card.getAttribute("data-category") === category
+              ) {
+                card.style.display = "block";
+                setTimeout(() => {
+                  card.style.opacity = "1";
+                  card.style.transform = "translateY(0)";
+                }, 10);
+              } else {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+                setTimeout(() => {
+                  card.style.display = "none";
+                }, 300);
+              }
+            });
+          });
+        });
+
+        // Quick view functionality
+        quickViewButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const productCard = this.closest(".bird-product-card");
+            const productName = productCard.querySelector("h3").textContent;
+            const productBrand = productCard.querySelector(
+              ".bird-product-brand"
+            ).textContent;
+            const productDesc =
+              productCard.querySelector(".bird-product-desc").textContent;
+            const productPrice = productCard.querySelector(
+              ".bird-current-price"
+            ).textContent;
+            const productImg = productCard.querySelector("img").src;
+            const productRating = productCard.querySelector(
+              ".bird-product-rating"
+            ).innerHTML;
+
+            // Get additional details if available
+            let sizeInfo = "";
+            const sizeElement = productCard.querySelector(
+              ".bird-product-sizes"
+            );
+            if (sizeElement) {
+              sizeInfo = sizeElement.innerHTML;
+            }
+
+            const modalContent = `
+                        <div class="bird-modal-product-image">
+                            <img src="${productImg}" alt="${productName}">
+                        </div>
+                        <div class="bird-modal-product-info">
+                            <h2>${productName}</h2>
+                            <p class="bird-modal-brand">${productBrand}</p>
+                            <div class="bird-modal-rating">${productRating}</div>
+                            <p class="bird-modal-desc">${productDesc}</p>
+                            ${
+                              sizeInfo
+                                ? `<div class="bird-modal-sizes">${sizeInfo}</div>`
+                                : ""
+                            }
+                            <div class="bird-modal-price">${productPrice}</div>
+                            <button class="bird-modal-add-to-cart btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                            <div class="bird-modal-features">
+                                <h4>Bird-Safe Features:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Non-toxic, bird-safe materials</li>
+                                    <li><i class="fas fa-check"></i> Easy to clean and maintain</li>
+                                    <li><i class="fas fa-check"></i> Promotes natural bird behaviors</li>
+                                    <li><i class="fas fa-check"></i> Durable construction for beak strength</li>
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+
+            document.querySelector(".bird-modal-product-details").innerHTML =
+              modalContent;
+            quickViewModal.style.display = "flex";
+
+            // Add event listener to modal add to cart button
+            setTimeout(() => {
+              document
+                .querySelector(".bird-modal-add-to-cart")
+                .addEventListener("click", function () {
+                  // Add to cart logic here
+                  quickViewModal.style.display = "none";
+                });
+            }, 100);
+          });
+        });
+
+        // Close modal
+        closeModal.addEventListener("click", function () {
+          quickViewModal.style.display = "none";
+        });
+
+        // Close modal when clicking outside
+        quickViewModal.addEventListener("click", function (e) {
+          if (e.target === this) {
+            quickViewModal.style.display = "none";
+          }
+        });
+
+        // Sort functionality
+        sortSelect.addEventListener("change", function () {
+          const sortValue = this.value;
+          const productsArray = Array.from(productCards);
+          const visibleProducts = productsArray.filter(
+            (card) => card.style.display !== "none"
+          );
+
+          visibleProducts.sort((a, b) => {
+            const priceA = parseFloat(
+              a
+                .querySelector(".bird-current-price")
+                .textContent.replace("$", "")
+            );
+            const priceB = parseFloat(
+              b
+                .querySelector(".bird-current-price")
+                .textContent.replace("$", "")
+            );
+            const nameA = a.querySelector("h3").textContent.toLowerCase();
+            const nameB = b.querySelector("h3").textContent.toLowerCase();
+            const ratingA = a
+              .querySelector(".bird-rating-count")
+              .textContent.replace(/[()]/g, "");
+            const ratingB = b
+              .querySelector(".bird-rating-count")
+              .textContent.replace(/[()]/g, "");
+
+            // For cage size sorting
+            let sizeA = 0,
+              sizeB = 0;
+            const sizeElementA = a.querySelector(".bird-size-btn.active");
+            const sizeElementB = b.querySelector(".bird-size-btn.active");
+
+            if (sizeElementA) {
+              const sizeTextA = sizeElementA.textContent;
+              sizeA = parseInt(sizeTextA.replace(/[^0-9]/g, "")) || 0;
+            }
+
+            if (sizeElementB) {
+              const sizeTextB = sizeElementB.textContent;
+              sizeB = parseInt(sizeTextB.replace(/[^0-9]/g, "")) || 0;
+            }
+
+            switch (sortValue) {
+              case "price-low":
+                return priceA - priceB;
+              case "price-high":
+                return priceB - priceA;
+              case "size":
+                return sizeB - sizeA; // Larger cages first
+              case "rating":
+                // Simple rating sort based on stars
+                const starsA = a.querySelectorAll(
+                  ".bird-stars .fa-star, .bird-stars .fa-star-half-alt"
+                ).length;
+                const starsB = b.querySelectorAll(
+                  ".bird-stars .fa-star, .bird-stars .fa-star-half-alt"
+                ).length;
+                return starsB - starsA;
+              default:
+                return 0;
+            }
+          });
+
+          // Reorder products in the grid
+          const productGrid = document.querySelector(".bird-products-grid");
+          visibleProducts.forEach((product) => {
+            productGrid.appendChild(product);
+          });
+        });
+
+        // Size, bird type, color, and flavor selection
+        document.addEventListener("click", function (e) {
+          // Size buttons
+          if (e.target.classList.contains("bird-size-btn")) {
+            const parent = e.target.parentElement;
+            const buttons = parent.querySelectorAll(".bird-size-btn");
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            e.target.classList.add("active");
+          }
+
+          // Bird type buttons
+          if (e.target.classList.contains("bird-type-btn")) {
+            const parent = e.target.parentElement;
+            const buttons = parent.querySelectorAll(".bird-type-btn");
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            e.target.classList.add("active");
+          }
+
+          // Color options
+          if (e.target.classList.contains("bird-color-option")) {
+            const parent = e.target.parentElement;
+            const options = parent.querySelectorAll(".bird-color-option");
+            options.forEach((opt) => opt.classList.remove("active"));
+            e.target.classList.add("active");
+          }
+
+          // Flavor buttons
+          if (e.target.classList.contains("bird-flavor-btn")) {
+            const parent = e.target.parentElement;
+            const buttons = parent.querySelectorAll(".bird-flavor-btn");
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            e.target.classList.add("active");
+          }
+        });
+
+        // Size guide download button
+        document
+          .querySelector(".size-guide-btn")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            alert(
+              "Thank you for your interest! The Bird Cage Size Guide PDF will be downloaded to your device."
+            );
+            // In a real application, this would trigger a PDF download
+          });
+
+        // Load more button
+        document
+          .querySelector(".bird-load-more-btn")
+          .addEventListener("click", function () {
+            // In a real application, this would load more products from a server
+            this.textContent = "All Products Loaded";
+            this.disabled = true;
+            this.style.opacity = "0.7";
+
+            // Show a message
+            const message = document.createElement("p");
+            message.textContent = "Showing all available bird products";
+            message.style.textAlign = "center";
+            message.style.marginTop = "10px";
+            message.style.color = "var(--accent2)";
+            this.parentElement.appendChild(message);
+          });
+
+        // Initialize cart display
+        updateCartDisplay();
+      });
+    </script>
+  </body>
+  <script src="Asset/js/nav-toggle.js"></script>
+</html>
